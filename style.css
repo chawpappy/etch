@@ -1,18 +1,8 @@
 #gridSpace {
     display: grid;
-    /*background-color:aquamarine;*/
     padding: 1px;   
     width: 800px;
     height: 800px; 
     border: 1px solid blue;
 }
 
-/*.square {
-    border: 1px dotted lightgrey;
-    height: auto;
-    background-color:aquamarine;
-}
-
-.hovered{
-    background-color: black;
-}

@@ -5,15 +5,13 @@ var slider = document.querySelector('#range');
 makeGrid(10);
 
 function color(){
-    //this.classList.toggle('hovered');
-    this.setAttribute("style","background-color: black");
+        this.setAttribute("style","background-color: black");
 }
 
 function pixels(){
     let boxes = container.querySelectorAll('div')
     boxes.forEach(boxes => boxes.remove());
     makeGrid(slider.value);
-    console.log(slider.value);
 }
 
 function makeGrid(val) {
@@ -27,6 +25,7 @@ function makeGrid(val) {
         }
         const changed = container.querySelectorAll('div');
         changed.forEach(changed => changed.addEventListener('mouseover',color));
+        changed.forEach(changed => changed.addEventListener('touchmove',color));
         };
 
 function cleargrid(){
